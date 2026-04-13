@@ -1,50 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Hotel Review 项目宪法
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. 数据驱动设计
+可视化必须准确反映真实数据，类别严格遵循14个标准小类：
+- 设施类：房间设施、公共设施、餐饮设施
+- 服务类：前台服务、客房服务、退房/入住效率
+- 位置类：交通便利性、周边配套、景观/朝向
+- 价格类：性价比、价格合理性
+- 体验类：整体满意度、安静程度、卫生状况
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. 用户体验优先
+- 全中文界面
+- 响应式设计（支持桌面、平板、手机）
+- 页面加载时间 < 3秒
+- AI问答响应时间 < 5秒
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. AI回答可溯源
+- AI回答必须基于实际评论内容
+- 每条回答必须展示引用来源（具体评论）
+- 禁止幻觉（不编造不存在的信息）
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. 性能与可维护性
+- 建立数据库索引优化查询
+- 模块化设计，组件可复用
+- 使用TypeScript确保类型安全
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. 简洁实用优先
+- 优先使用框架内置功能
+- 禁止过度工程化
+- 代码简洁易读，不过度设计
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## 技术栈约束
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- 前端：Next.js
+- 后端：Insforge
+- 数据库：Insforge内置数据库
+- AI模型：google/gemini-3-flash-preview（通过Insforge AI SDK调用）
+- 样式：Tailwind CSS
+- 图表：Recharts
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## 开发工作流
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- 所有文档使用中文书写
+- 代码提交前确保通过类型检查
+- 遵循Git Feature Branch工作流
+- 主分支保护，通过PR合并
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+本宪法为项目最高指导原则，所有开发决策必须符合上述原则。修订需经文档记录并同步更新相关规范。
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-01-14 | **Last Amended**: 2026-01-14
